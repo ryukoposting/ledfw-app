@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="make_sure_device_powered_on">Make sure the Fwcom device is powered on.</string>
+    <string name="make_sure_android_near_device">Make sure your Android is within 10 feet of the Fwcom device.</string>
+
+    <string name="tap_plus_to_scan">Tap the (＋) button to scan for Fwcom devices.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

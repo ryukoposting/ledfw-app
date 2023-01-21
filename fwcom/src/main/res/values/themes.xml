@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Fwcom" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/indigo_400</item>
+        <item name="colorPrimaryVariant">@color/indigo_900</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/lightblue_200</item>
+        <item name="colorSecondaryVariant">@color/lightblue_500</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.Fwcom.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Fwcom.Title" parent="Theme.AppCompat.DayNight">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.Fwcom.Emph" parent="Theme.AppCompat.DayNight">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.Fwcom.Paragraph" parent="Theme.AppCompat.DayNight"/>
+
+    <style name="Theme.Fwcom.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Fwcom.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.Fwcom.ImageButton" parent="ThemeOverlay.AppCompat.DayNight">
+        <item name="iconTint">@color/white</item>
+    </style>
+
+    <style name="Theme.Fwcom.Icon" parent="ThemeOverlay.AppCompat.DayNight">
+        <item name="tint">@color/black</item>
+    </style>
+</resources>

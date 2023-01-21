@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.evanperrygrove.fwcomapp.SavedDevicesFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_saved">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_ScanFragment"
+            app:destination="@id/ScanFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_FirstFragment_to_DeviceControlFragment"
+            app:destination="@id/DeviceControlFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/ScanFragment"
+        android:name="com.evanperrygrove.fwcomapp.ScanFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_scan">
+    </fragment>
+    <fragment
+        android:id="@+id/DeviceControlFragment"
+        android:name="com.evanperrygrove.fwcomapp.DeviceControlFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_device_control">
+        <argument
+            app:argType="com.evanperrygrove.fwcom.util.StoredDevice"
+            android:name="device"/>
+        <argument
+            app:argType="string"
+            android:name="title"/>
+    </fragment>
+</navigation>

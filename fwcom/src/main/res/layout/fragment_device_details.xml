@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/text_margin"
+    android:paddingBottom="@dimen/text_margin">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/details_card_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details"
+            android:theme="@style/Theme.Fwcom.Title"
+            android:layout_marginStart="@dimen/text_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!--  serial number  -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serial_number"
+            app:layout_constraintTop_toBottomOf="@id/details_card_title_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/text_margin"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/serial_number_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/details_card_title_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:theme="@style/Theme.Fwcom.Emph"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/serial_number_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/serial_number_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:layout_marginStart="@dimen/text_margin"
+            />
+
+        <!--  mac address  -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mac_address"
+            app:layout_constraintTop_toBottomOf="@id/serial_number_divider"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/text_margin"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mac_address_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/serial_number_divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:theme="@style/Theme.Fwcom.Emph"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/mac_address_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/mac_address_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:layout_marginStart="@dimen/text_margin"
+            />
+
+        <!--  manufacturer name  -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manufacturer_name"
+            app:layout_constraintTop_toBottomOf="@id/mac_address_divider"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/text_margin"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/manufacturer_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/mac_address_divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:theme="@style/Theme.Fwcom.Emph"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/manufacturer_name_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/manufacturer_name_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:layout_marginStart="@dimen/text_margin"
+            />
+</androidx.constraintlayout.widget.ConstraintLayout>
